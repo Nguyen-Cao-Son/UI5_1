@@ -1,0 +1,18 @@
+<mvc:View
+	xmlns="sap.m"
+	controllerName="ui5.walkthrough.controller.Detail"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:wt="ui5.walkthrough.control">
+	<Page
+		title="{i18n>detailPageTitle}" 
+		showNavButton="true" 
+		navButtonPress=".onNavBack">
+	<ObjectHeader
+			intro="{invoice1>ShipperName}"
+			title="{invoice1>ProductName}"/>
+    <wt:ProductRating 
+			id="rating" 
+			class="sapUiSmallMarginBeginEnd" 
+			change=".onRatingChange"/>
+	</Page>
+</mvc:View>
